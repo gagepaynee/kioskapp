@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import render
-from models import Competition, Club, Major, OurStory
+from app.models import Competition, Club, Major, OurStory
 
 # Create your views here.
 
