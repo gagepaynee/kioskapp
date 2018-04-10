@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from models.py import Competition, Club, Major, OurStory
+from kioskapp.app.models import Competition, Club, Major, OurStory
 
 # Register your models here.
 
