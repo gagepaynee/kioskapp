@@ -22,7 +22,7 @@ def testingClub(request):
         final = 'app/5.html'
     elif (length == 8):
         final = 'app/8.html'
-    print length
+    
     return render(request, final, {'units':clubs, 'type':type})
 
 def testingCompetition(request):
@@ -41,7 +41,7 @@ def testingCompetition(request):
         final = 'app/5.html'
     elif (length == 8):
         final = 'app/8.html'
-    print length
+  
     return render(request, final, {'units':competitions, 'type':type})
 
 def testingMajor(request):
@@ -60,7 +60,7 @@ def testingMajor(request):
         final = 'app/5.html'
     elif (length == 8):
         final = 'app/8.html'
-    print length
+   
     return render(request, final, {'units':majors, 'type':type})
 
 def index(request):
@@ -155,9 +155,9 @@ def major_individual(request,pk):
 def our_story(request):
     our_story = OurStory.objects.get(pk=1)
     tempURL = our_story.url
-    print tempURL
+    
     test = list(tempURL)
-    print test
+   
     check = 0
     index = 0
     embed = ['e','m','b','e','d', '/']
@@ -180,5 +180,5 @@ def our_story(request):
     final = "".join(test)
     our_story.url = final
     
-    print our_story.url
+    
     return render(request, 'app/our_story.html', {'our_story':our_story})
