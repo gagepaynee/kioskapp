@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Kiosk</title>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/hrk4evq.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="row topBar">
+            <div class="col-1">
+                <a href="{% url 'index' %}"><i class="backButton far fa-arrow-alt-circle-left"></i></a>
+            </div>
+            <div class="col-10">
+                <h1 class="mainHeading">School of Engineering</h1>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row" style="height: 2%;"></div>
+        <div class="row">
+            <div class="col-12">
+                <a style href="{% url 'our_story' %}">
+                    <div class="ourStory">
+                    <img class="myBlockBig" src="{{our_story.picture.url}}" alt="test">
+                    <div class="ourStoryText">
+                        <h1>Hear Our Story</h1>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="height: 2%;"></div>
+        
+        <div class="row">
+            <div class="col-4">
+            <a href="{% url 'testingCompetition' %}">
+                <div class="myBlock">
+                <div class="upperBar">
+                    <i class="fas fa-trophy icon"></i>
+                </div>
+                <h1>Competitions</h1>
+                </div>
+            </a>
+            </div>
+            <div class="col-4">
+            <a href="{% url 'testingClub' %}">
+                <div class="myBlock">
+                <div class="upperBar">
+                    <i class="fas fa-users icon"></i>
+                </div>
+                <h1>Clubs</h1>
+                </div>
+            </a>
+            </div>
+            <div class="col-4">
+            <a href="{% url 'testingMajor' %}">
+                <div class="myBlock">
+                <div class="upperBar">
+                    <i class="fas fa-university icon"></i>
+                </div>
+                <h1>Majors</h1>
+                </div>
+            </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var idleTime = 0;
+            $(document).ready(function () {
+                //Increment the idle time counter every minute.
+                var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+            
+                //Zero the idle timer on mouse movement.
+                $(this).mousemove(function (e) {
+                    idleTime = 0;
+                });
+                $(this).keypress(function (e) {
+                    idleTime = 0;
+                });
+            });
+            
+            function timerIncrement() {
+                idleTime = idleTime + 1;
+                if (idleTime > 5) { // 20 minutes
+                    window.location.href = "http://localhost:8000";
+                }
+            }
+            </script> 
+    </body>
+</html>

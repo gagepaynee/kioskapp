@@ -1,0 +1,90 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<div class="row" style="height: 2.6%"></div>
+<div class="row">
+    <div class="col-3">
+        <a href="{% url type pk=units.0.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.0.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.0.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.1.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.1.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.1.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.2.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.2.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.2.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.3.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.3.picture.url}}" alt="test"><div class="top8"></div>
+                <div class="bottom8">
+                    <p class="text8">{{units.3.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row" style="height: 2.6%"></div>
+<div class="row">
+    <div class="col-3">
+        <a href="{% url type pk=units.4.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.4.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.4.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.5.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.5.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.5.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.6.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.6.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.6.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-3">
+        <a href="{% url type pk=units.7.pk %}">
+            <div class="myBlockSide8">
+                <img class="top8" src="{{units.7.picture.url}}" alt="test">
+                <div class="bottom8">
+                    <p class="text8">{{units.7.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row" style="height: 2.7%"></div>
+{% endblock %}

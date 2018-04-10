@@ -1,0 +1,61 @@
+body {
+    overflow-y: hidden;
+}
+.description {
+    padding: 15px;
+    font-size: 24px;
+    height: 675px;
+    width: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+.video {
+    width: 85%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-65%);
+}
+.secondRow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.half {
+    position: relative;
+}
+
+.row {
+    margin-left: 0px !important;
+}
+
+.col-6 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}

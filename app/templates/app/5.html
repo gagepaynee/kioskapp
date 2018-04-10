@@ -1,0 +1,63 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<div class="row" style="height: 2.6%"></div>
+<div class="row editRow5">
+    <div class="col-4">
+        <a href="{% url type pk=units.0.pk %}">
+                <div class="myBlockSide5">
+                    <img class="top5" src="{{units.0.picture.url}}" alt="test">
+                    <div class="bottom5">
+                        <p class="text5">{{units.0.title}}</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="col-4">
+        <a href="{% url type pk=units.1.pk %}">
+                <div class="myBlockSide5">
+                    <img class="top5" src="{{units.1.picture.url}}" alt="test">
+                    <div class="bottom5">
+                        <p class="text5">{{units.1.title}}</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="col-4">
+        <a href="{% url type pk=units.2.pk %}">
+                <div class="myBlockSide5">
+                    <img class="top5" src="{{units.2.picture.url}}" alt="test">
+                    <div class="bottom5">
+                        <p class="text5">{{units.2.title}}</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+</div>
+<div class="row" style="height: 2.6%"></div>
+<div class="row editRow5">
+    <div class="col-2"></div>
+    <div class="col-4">
+        <a href="{% url type pk=units.3.pk %}">
+                <div class="myBlockSide5">
+                    <img class="top5" src="{{units.3.picture.url}}" alt="test">
+                    <div class="bottom5">
+                        <p class="text5">{{units.3.title}}</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="col-4">
+        <a href="{% url type pk=units.3.pk %}">
+                <div class="myBlockSide5">
+                    <img class="top5" src="{{units.3.picture.url}}" alt="test">
+                    <div class="bottom5">
+                        <p class="text5">{{units.3.title}}</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row" style="height: 2.7%"></div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+
+.ourStory {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.myBlockBig {
+    position: absolute;
+    width: 100%;
+    opacity: .7;
+    background-color: rgb(102, 133, 163);  
+    border-radius: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ourStoryText {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    opacity: .8;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+}
+
+.ourStoryText h1 {
+    height: 100px;
+    line-height: 100px;
+    color: rgb(0, 51, 102);
+    font-weight: bold;
+}
+
+.myBlock {
+    width: 100%;
+    height: 32%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color:  #0A254E;
+}
+
+.upperBar {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 30%;
+    background-color: rgb(102, 133, 163);
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+}
+
+.myBlock h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:  #0A254E;
+}
